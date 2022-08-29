@@ -31,6 +31,9 @@ final class OnboardingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+//        navigationController?.navigationBar.prefersLargeTitles = true
+//        navigationItem.titleView = contentView.logoImageView
+//        navigationController?.navigationBar.setBackgroundImage(UIImage(named: "logo"), for: .default)
     }
 }
 

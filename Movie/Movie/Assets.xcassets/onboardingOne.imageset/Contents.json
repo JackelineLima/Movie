@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "onboardingOne.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

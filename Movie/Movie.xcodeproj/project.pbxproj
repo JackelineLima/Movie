@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		378F3D0D28BBB42F0057ECFA /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378F3D0C28BBB42F0057ECFA /* UIColor.swift */; };
+		378F3D0F28BBB6A30057ECFA /* UIFontStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378F3D0E28BBB6A30057ECFA /* UIFontStyle.swift */; };
+		378F3D1528BBB7360057ECFA /* Ubuntu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 378F3D1128BBB7360057ECFA /* Ubuntu-Light.ttf */; };
+		378F3D1628BBB7360057ECFA /* Ubuntu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 378F3D1228BBB7360057ECFA /* Ubuntu-Regular.ttf */; };
+		378F3D1728BBB7360057ECFA /* Ubuntu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 378F3D1328BBB7360057ECFA /* Ubuntu-Bold.ttf */; };
+		378F3D1828BBB7360057ECFA /* Ubuntu-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 378F3D1428BBB7360057ECFA /* Ubuntu-Medium.ttf */; };
+		378F3D1B28BBBC900057ECFA /* OnboardingSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378F3D1A28BBBC900057ECFA /* OnboardingSlider.swift */; };
+		378F3D1D28BBC0840057ECFA /* UIButtonMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378F3D1C28BBC0840057ECFA /* UIButtonMovie.swift */; };
+		378F3E4E28BBC79C0057ECFA /* OnboardingImageSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378F3E4D28BBC79C0057ECFA /* OnboardingImageSlider.swift */; };
+		379FC75828BD09D70020C9F8 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FC75728BD09D70020C9F8 /* PageControl.swift */; };
 		37F738D228BB1526006ABE8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F738D128BB1526006ABE8F /* AppDelegate.swift */; };
 		37F738D428BB1526006ABE8F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F738D328BB1526006ABE8F /* SceneDelegate.swift */; };
 		37F738DC28BB1526006ABE8F /* Movie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 37F738DA28BB1526006ABE8F /* Movie.xcdatamodeld */; };
@@ -39,6 +49,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		378F3D0C28BBB42F0057ECFA /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		378F3D0E28BBB6A30057ECFA /* UIFontStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontStyle.swift; sourceTree = "<group>"; };
+		378F3D1128BBB7360057ECFA /* Ubuntu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Ubuntu-Light.ttf"; path = "../../../../PhotoFeed/PhotoFeed/PhotoFeed/Fonts/Ubuntu-Light.ttf"; sourceTree = "<group>"; };
+		378F3D1228BBB7360057ECFA /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Ubuntu-Regular.ttf"; path = "../../../../PhotoFeed/PhotoFeed/PhotoFeed/Fonts/Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
+		378F3D1328BBB7360057ECFA /* Ubuntu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Ubuntu-Bold.ttf"; path = "../../../../PhotoFeed/PhotoFeed/PhotoFeed/Fonts/Ubuntu-Bold.ttf"; sourceTree = "<group>"; };
+		378F3D1428BBB7360057ECFA /* Ubuntu-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Ubuntu-Medium.ttf"; path = "../../../../PhotoFeed/PhotoFeed/PhotoFeed/Fonts/Ubuntu-Medium.ttf"; sourceTree = "<group>"; };
+		378F3D1A28BBBC900057ECFA /* OnboardingSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlider.swift; sourceTree = "<group>"; };
+		378F3D1C28BBC0840057ECFA /* UIButtonMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonMovie.swift; sourceTree = "<group>"; };
+		378F3E4D28BBC79C0057ECFA /* OnboardingImageSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingImageSlider.swift; sourceTree = "<group>"; };
+		379FC75728BD09D70020C9F8 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
 		37F738CE28BB1526006ABE8F /* Movie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37F738D128BB1526006ABE8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37F738D328BB1526006ABE8F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +102,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		378F3D0B28BBB41C0057ECFA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				378F3D0C28BBB42F0057ECFA /* UIColor.swift */,
+				378F3D0E28BBB6A30057ECFA /* UIFontStyle.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		378F3D1028BBB6D50057ECFA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				378F3D1328BBB7360057ECFA /* Ubuntu-Bold.ttf */,
+				378F3D1128BBB7360057ECFA /* Ubuntu-Light.ttf */,
+				378F3D1428BBB7360057ECFA /* Ubuntu-Medium.ttf */,
+				378F3D1228BBB7360057ECFA /* Ubuntu-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		378F3D1928BBBC730057ECFA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				378F3D1A28BBBC900057ECFA /* OnboardingSlider.swift */,
+				378F3D1C28BBC0840057ECFA /* UIButtonMovie.swift */,
+				378F3E4D28BBC79C0057ECFA /* OnboardingImageSlider.swift */,
+				379FC75728BD09D70020C9F8 /* PageControl.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		37F738C528BB1526006ABE8F = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +156,9 @@
 		37F738D028BB1526006ABE8F /* Movie */ = {
 			isa = PBXGroup;
 			children = (
+				378F3D1928BBBC730057ECFA /* Components */,
+				378F3D1028BBB6D50057ECFA /* Fonts */,
+				378F3D0B28BBB41C0057ECFA /* Utils */,
 				37F7390C28BB1571006ABE8F /* Onboarding */,
 				37F738D128BB1526006ABE8F /* AppDelegate.swift */,
 				37F738D328BB1526006ABE8F /* SceneDelegate.swift */,
@@ -248,7 +302,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				378F3D1728BBB7360057ECFA /* Ubuntu-Bold.ttf in Resources */,
+				378F3D1628BBB7360057ECFA /* Ubuntu-Regular.ttf in Resources */,
+				378F3D1828BBB7360057ECFA /* Ubuntu-Medium.ttf in Resources */,
 				37F738E128BB1529006ABE8F /* LaunchScreen.storyboard in Resources */,
+				378F3D1528BBB7360057ECFA /* Ubuntu-Light.ttf in Resources */,
 				37F738DE28BB1529006ABE8F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,10 +334,16 @@
 			files = (
 				37F738D228BB1526006ABE8F /* AppDelegate.swift in Sources */,
 				37F7390828BB156C006ABE8F /* OnboardingCoordinator.swift in Sources */,
+				378F3D1B28BBBC900057ECFA /* OnboardingSlider.swift in Sources */,
+				379FC75828BD09D70020C9F8 /* PageControl.swift in Sources */,
 				37F7390928BB156C006ABE8F /* OnboardingViewController.swift in Sources */,
 				37F7390A28BB156C006ABE8F /* OnboardingView.swift in Sources */,
 				37F738DC28BB1526006ABE8F /* Movie.xcdatamodeld in Sources */,
+				378F3D0D28BBB42F0057ECFA /* UIColor.swift in Sources */,
+				378F3E4E28BBC79C0057ECFA /* OnboardingImageSlider.swift in Sources */,
 				37F7390B28BB156C006ABE8F /* OnboardingViewModel.swift in Sources */,
+				378F3D0F28BBB6A30057ECFA /* UIFontStyle.swift in Sources */,
+				378F3D1D28BBC0840057ECFA /* UIButtonMovie.swift in Sources */,
 				37F738D428BB1526006ABE8F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
