@@ -12,9 +12,7 @@ final class OnboardingView: UIView {
     private var imagesArray: [OnboardingImageSlider] = []
     private var currentIndex = 0 {
         didSet {
-            if currentIndex == imagesArray.count - 1 {
-                onboardingButton.setupLayout(style: .buttonDefault, title: "Vamos começar!")
-            }
+            setupDescriptionbutton()
         }
     }
     
@@ -36,7 +34,7 @@ final class OnboardingView: UIView {
     private lazy var onboardingButton: UIButtonMovie = {
         let button = UIButtonMovie()
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setupLayout(style: .buttonDefault, title: "Próximo")
+        button.setupLayout(style: .buttonDefault, title: "Próximo", imageName: "icon-button")
         return button
     }()
     
@@ -69,7 +67,7 @@ final class OnboardingView: UIView {
             onboardingView.leadingAnchor.constraint(equalTo: leadingAnchor),
             
             onboardingButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -24),
-            onboardingButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -24)
+            onboardingButton.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -24)
         ])
     }
     
@@ -96,15 +94,19 @@ final class OnboardingView: UIView {
             }
         }
     }
+    
+    private func setupDescriptionbutton() {
+        if currentIndex == imagesArray.count - 1 {
+            onboardingButton.setupLayout(style: .buttonWithoutBackground, title: "Vamos começar!")
+        } else {
+            onboardingButton.setupLayout(style: .buttonDefault, title: "Próximo")
+        }
+    }
 }
 
 extension OnboardingView: OnboardingSliderDelegate {
     
     func didMove(to index: Int) {
         currentIndex = index
-    }
-    
-    func onLastPage() {
-        
     }
 }

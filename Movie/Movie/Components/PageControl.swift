@@ -9,6 +9,18 @@ import Foundation
 import UIKit
 
 class PageControl: UIPageControl {
+
+    override var currentPage: Int {
+        didSet {
+            setupIndicator()
+        }
+    }
+
+    override var numberOfPages: Int {
+        didSet {
+            setupIndicator()
+        }
+    }
     
     public convenience init(numberOfPages: Int) {
         self.init()
@@ -19,20 +31,22 @@ class PageControl: UIPageControl {
     public func setupLayout(numberOfPages: Int) {
         self.numberOfPages = numberOfPages
         backgroundColor = .clear
-        pageIndicatorTintColor = .white
-        currentPageIndicatorTintColor = .init(rgb: 0x2D2D2D)
         contentMode = .redraw
+        currentPageIndicatorTintColor = .init(rgb: 0x2D2D2D)
+        pageIndicatorTintColor = .init(rgb: 0x2D2D2D)
     }
     
     public func setupCurrentPage(with index: Int) {
         currentPage = index
     }
     
-    override func draw(_ rect: CGRect) {
-        let path = UIBezierPath(roundedRect:rect, cornerRadius: 10)
-        let color = UIColor.red
-        color.setFill()
-        path.fill()
-//        print(rect)
+    private func setupIndicator() {
+        for index in 0..<numberOfPages {
+            if index == currentPage {
+                setIndicatorImage(nil, forPage: index)
+            } else {
+                setIndicatorImage(UIImage(named: "elipse"), forPage: index)
+            }
+        }
     }
 }

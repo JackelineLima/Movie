@@ -28,6 +28,7 @@ public enum UIFontStyle {
     case f16PrimaryRegular
     case f18PrimaryRegular
     case f18PrimaryMedium
+    case f18PrimaryBold
     case f20PrimaryBold
     case f23PrimaryBold
     case f29PrimaryBold
@@ -36,7 +37,7 @@ public enum UIFontStyle {
         switch self {
         case .f11PrimaryRegular, .f13PrimaryRegular, .f14PrimaryRegular, .f16PrimaryRegular, .f18PrimaryRegular:
             return UIFontWeight.primaryRegular
-        case .f14PrimaryBold, .f16PrimaryBold, .f20PrimaryBold, .f23PrimaryBold, .f29PrimaryBold:
+        case .f14PrimaryBold, .f16PrimaryBold, .f18PrimaryBold, .f20PrimaryBold, .f23PrimaryBold, .f29PrimaryBold:
             return UIFontWeight.primaryBold
         case .f15PrimaryLight:
             return UIFontWeight.primaryLight
@@ -59,7 +60,7 @@ public enum UIFontStyle {
             size = 15
         case .f16PrimaryBold, .f16PrimaryRegular:
             size = 16
-        case .f18PrimaryRegular, .f18PrimaryMedium:
+        case .f18PrimaryRegular, .f18PrimaryMedium, .f18PrimaryBold:
             size = 18
         case .f20PrimaryBold:
             size = 20

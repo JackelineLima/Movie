@@ -13,33 +13,40 @@ public enum UIButtonStyle {
     case buttonWithoutBackground
     
     public var font: UIFont {
-        UIFontStyle.customFont(name: .f18PrimaryMedium)
+        UIFontStyle.customFont(name: .f18PrimaryBold)
     }
     
     public var height: CGFloat {
         switch self {
-        case .buttonDefault:
-            return 47.0
-        case .buttonWithoutBackground:
-            return 24.0
+        case .buttonDefault, .buttonWithoutBackground:
+            return 38.0
         }
     }
     
     public var backgroundColor: UIColor {
         switch self {
         case .buttonDefault:
-            return .init(rgb: 0xEFA85C)
+            return .init(rgb: 0xD8D0B8)
         case .buttonWithoutBackground:
-            return .white
+            return .init(rgb: 0x2D2D2D)
         }
     }
     
     public var textColor: UIColor {
         switch self {
         case .buttonDefault:
-            return .white
+            return .init(rgb: 0x2D2D2D)
         case .buttonWithoutBackground:
-            return .init(rgb: 0xEFA85C)
+            return .init(rgb: 0xCAB482)
+        }
+    }
+    
+    public var borderColor: UIColor {
+        switch self {
+        case .buttonDefault:
+            return .init(rgb: 0x2D2D2D)
+        case .buttonWithoutBackground:
+            return .init(rgb: 0xD8D0B8)
         }
     }
     
@@ -66,13 +73,16 @@ public class UIButtonMovie: UIButton {
         backgroundColor = buttonStyle.backgroundColor
         setTitleColor(buttonStyle.textColor, for: .normal)
         layer.cornerRadius = style.cornerRadius
+        layer.borderWidth = 1
+        layer.borderColor = style.borderColor.cgColor
         
         setSizeConstraints()
         
         if let imageName = imageName, let image = UIImage(named: imageName) {
-            self.setImage(image, for: .normal)
-            self.imageView?.contentMode = .scaleAspectFit
-            self.imageEdgeInsets = UIEdgeInsets(top: 0, left: -16, bottom: 0, right: 0)
+            semanticContentAttribute = .forceRightToLeft
+            setImage(image, for: .normal)
+            imageView?.contentMode = .scaleAspectFit
+            imageEdgeInsets = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 0)
         }
         
         guard let titleLabel = titleLabel else { return }
@@ -88,7 +98,7 @@ public class UIButtonMovie: UIButton {
                                                     toItem: nil,
                                                     attribute: .notAnAttribute,
                                                     multiplier: 1,
-                                                    constant: 140)
+                                                    constant: 180)
         heightConstraint = NSLayoutConstraint(item: self,
                                               attribute: .height,
                                               relatedBy: .equal,
