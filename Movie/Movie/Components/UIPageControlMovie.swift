@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class PageControl: UIPageControl {
+class UIPageControlMovie: UIPageControl {
 
     override var currentPage: Int {
         didSet {

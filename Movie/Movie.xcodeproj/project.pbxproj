@@ -13,10 +13,15 @@
 		378F3D1628BBB7360057ECFA /* Ubuntu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 378F3D1228BBB7360057ECFA /* Ubuntu-Regular.ttf */; };
 		378F3D1728BBB7360057ECFA /* Ubuntu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 378F3D1328BBB7360057ECFA /* Ubuntu-Bold.ttf */; };
 		378F3D1828BBB7360057ECFA /* Ubuntu-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 378F3D1428BBB7360057ECFA /* Ubuntu-Medium.ttf */; };
-		378F3D1B28BBBC900057ECFA /* OnboardingSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378F3D1A28BBBC900057ECFA /* OnboardingSlider.swift */; };
+		378F3D1B28BBBC900057ECFA /* UIOnboardingSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378F3D1A28BBBC900057ECFA /* UIOnboardingSlider.swift */; };
 		378F3D1D28BBC0840057ECFA /* UIButtonMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378F3D1C28BBC0840057ECFA /* UIButtonMovie.swift */; };
-		378F3E4E28BBC79C0057ECFA /* OnboardingImageSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378F3E4D28BBC79C0057ECFA /* OnboardingImageSlider.swift */; };
-		379FC75828BD09D70020C9F8 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FC75728BD09D70020C9F8 /* PageControl.swift */; };
+		378F3E4E28BBC79C0057ECFA /* UIOnboardingImageSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378F3E4D28BBC79C0057ECFA /* UIOnboardingImageSlider.swift */; };
+		379FC75828BD09D70020C9F8 /* UIPageControlMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FC75728BD09D70020C9F8 /* UIPageControlMovie.swift */; };
+		37B7C71328BE7D98009C45D4 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B7C70F28BE7D98009C45D4 /* LoginCoordinator.swift */; };
+		37B7C71428BE7D98009C45D4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B7C71028BE7D98009C45D4 /* LoginViewController.swift */; };
+		37B7C71528BE7D98009C45D4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B7C71128BE7D98009C45D4 /* LoginView.swift */; };
+		37B7C71628BE7D98009C45D4 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B7C71228BE7D98009C45D4 /* LoginViewModel.swift */; };
+		37B7C71828BE7DE0009C45D4 /* ViewCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B7C71728BE7DE0009C45D4 /* ViewCodable.swift */; };
 		37F738D228BB1526006ABE8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F738D128BB1526006ABE8F /* AppDelegate.swift */; };
 		37F738D428BB1526006ABE8F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F738D328BB1526006ABE8F /* SceneDelegate.swift */; };
 		37F738DC28BB1526006ABE8F /* Movie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 37F738DA28BB1526006ABE8F /* Movie.xcdatamodeld */; };
@@ -55,10 +60,15 @@
 		378F3D1228BBB7360057ECFA /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Ubuntu-Regular.ttf"; path = "../../../../PhotoFeed/PhotoFeed/PhotoFeed/Fonts/Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
 		378F3D1328BBB7360057ECFA /* Ubuntu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Ubuntu-Bold.ttf"; path = "../../../../PhotoFeed/PhotoFeed/PhotoFeed/Fonts/Ubuntu-Bold.ttf"; sourceTree = "<group>"; };
 		378F3D1428BBB7360057ECFA /* Ubuntu-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Ubuntu-Medium.ttf"; path = "../../../../PhotoFeed/PhotoFeed/PhotoFeed/Fonts/Ubuntu-Medium.ttf"; sourceTree = "<group>"; };
-		378F3D1A28BBBC900057ECFA /* OnboardingSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlider.swift; sourceTree = "<group>"; };
+		378F3D1A28BBBC900057ECFA /* UIOnboardingSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIOnboardingSlider.swift; sourceTree = "<group>"; };
 		378F3D1C28BBC0840057ECFA /* UIButtonMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonMovie.swift; sourceTree = "<group>"; };
-		378F3E4D28BBC79C0057ECFA /* OnboardingImageSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingImageSlider.swift; sourceTree = "<group>"; };
-		379FC75728BD09D70020C9F8 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
+		378F3E4D28BBC79C0057ECFA /* UIOnboardingImageSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIOnboardingImageSlider.swift; sourceTree = "<group>"; };
+		379FC75728BD09D70020C9F8 /* UIPageControlMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPageControlMovie.swift; sourceTree = "<group>"; };
+		37B7C70F28BE7D98009C45D4 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		37B7C71028BE7D98009C45D4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		37B7C71128BE7D98009C45D4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		37B7C71228BE7D98009C45D4 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		37B7C71728BE7DE0009C45D4 /* ViewCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodable.swift; sourceTree = "<group>"; };
 		37F738CE28BB1526006ABE8F /* Movie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37F738D128BB1526006ABE8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37F738D328BB1526006ABE8F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +117,7 @@
 			children = (
 				378F3D0C28BBB42F0057ECFA /* UIColor.swift */,
 				378F3D0E28BBB6A30057ECFA /* UIFontStyle.swift */,
+				37B7C71728BE7DE0009C45D4 /* ViewCodable.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -125,12 +136,41 @@
 		378F3D1928BBBC730057ECFA /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				378F3D1A28BBBC900057ECFA /* OnboardingSlider.swift */,
+				378F3D1A28BBBC900057ECFA /* UIOnboardingSlider.swift */,
 				378F3D1C28BBC0840057ECFA /* UIButtonMovie.swift */,
-				378F3E4D28BBC79C0057ECFA /* OnboardingImageSlider.swift */,
-				379FC75728BD09D70020C9F8 /* PageControl.swift */,
+				378F3E4D28BBC79C0057ECFA /* UIOnboardingImageSlider.swift */,
+				379FC75728BD09D70020C9F8 /* UIPageControlMovie.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		37B7C70C28BE7D1F009C45D4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				37B7C70E28BE7D82009C45D4 /* Login */,
+				37F7390C28BB1571006ABE8F /* Onboarding */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		37B7C70D28BE7D42009C45D4 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				37F738D128BB1526006ABE8F /* AppDelegate.swift */,
+				37F738D328BB1526006ABE8F /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		37B7C70E28BE7D82009C45D4 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				37B7C70F28BE7D98009C45D4 /* LoginCoordinator.swift */,
+				37B7C71028BE7D98009C45D4 /* LoginViewController.swift */,
+				37B7C71128BE7D98009C45D4 /* LoginView.swift */,
+				37B7C71228BE7D98009C45D4 /* LoginViewModel.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		37F738C528BB1526006ABE8F = {
@@ -156,12 +196,11 @@
 		37F738D028BB1526006ABE8F /* Movie */ = {
 			isa = PBXGroup;
 			children = (
-				378F3D1928BBBC730057ECFA /* Components */,
-				378F3D1028BBB6D50057ECFA /* Fonts */,
 				378F3D0B28BBB41C0057ECFA /* Utils */,
-				37F7390C28BB1571006ABE8F /* Onboarding */,
-				37F738D128BB1526006ABE8F /* AppDelegate.swift */,
-				37F738D328BB1526006ABE8F /* SceneDelegate.swift */,
+				378F3D1028BBB6D50057ECFA /* Fonts */,
+				37B7C70D28BE7D42009C45D4 /* AppDelegate */,
+				378F3D1928BBBC730057ECFA /* Components */,
+				37B7C70C28BE7D1F009C45D4 /* Views */,
 				37F738DD28BB1529006ABE8F /* Assets.xcassets */,
 				37F738DF28BB1529006ABE8F /* LaunchScreen.storyboard */,
 				37F738E228BB1529006ABE8F /* Info.plist */,
@@ -334,17 +373,22 @@
 			files = (
 				37F738D228BB1526006ABE8F /* AppDelegate.swift in Sources */,
 				37F7390828BB156C006ABE8F /* OnboardingCoordinator.swift in Sources */,
-				378F3D1B28BBBC900057ECFA /* OnboardingSlider.swift in Sources */,
-				379FC75828BD09D70020C9F8 /* PageControl.swift in Sources */,
+				37B7C71328BE7D98009C45D4 /* LoginCoordinator.swift in Sources */,
+				37B7C71428BE7D98009C45D4 /* LoginViewController.swift in Sources */,
+				378F3D1B28BBBC900057ECFA /* UIOnboardingSlider.swift in Sources */,
+				379FC75828BD09D70020C9F8 /* UIPageControlMovie.swift in Sources */,
 				37F7390928BB156C006ABE8F /* OnboardingViewController.swift in Sources */,
 				37F7390A28BB156C006ABE8F /* OnboardingView.swift in Sources */,
 				37F738DC28BB1526006ABE8F /* Movie.xcdatamodeld in Sources */,
 				378F3D0D28BBB42F0057ECFA /* UIColor.swift in Sources */,
-				378F3E4E28BBC79C0057ECFA /* OnboardingImageSlider.swift in Sources */,
+				37B7C71628BE7D98009C45D4 /* LoginViewModel.swift in Sources */,
+				378F3E4E28BBC79C0057ECFA /* UIOnboardingImageSlider.swift in Sources */,
 				37F7390B28BB156C006ABE8F /* OnboardingViewModel.swift in Sources */,
 				378F3D0F28BBB6A30057ECFA /* UIFontStyle.swift in Sources */,
 				378F3D1D28BBC0840057ECFA /* UIButtonMovie.swift in Sources */,
+				37B7C71528BE7D98009C45D4 /* LoginView.swift in Sources */,
 				37F738D428BB1526006ABE8F /* SceneDelegate.swift in Sources */,
+				37B7C71828BE7DE0009C45D4 /* ViewCodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

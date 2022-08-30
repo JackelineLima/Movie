@@ -3,17 +3,13 @@
 //  Movie
 //
 //  Created by Jackeline Pires De Lima on 28/08/22.
-//  Copyright (c) 2022 ___ORGANIZATIONNAME___. All rights reserved.
 //
 
 import UIKit
 
-protocol OnboardingDisplayable: AnyObject {
-    func displaySomething()
-}
-
-final class OnboardingViewController: UIViewController {
-    private lazy var contentView = OnboardingView()
+class OnboardingViewController: UIViewController {
+    
+    private lazy var onboardingView = OnboardingView()
     private let coordinator: OnboardingCoordinatable
 
     init(coordinator: OnboardingCoordinatable) {
@@ -26,7 +22,8 @@ final class OnboardingViewController: UIViewController {
     }
 
     override func loadView() {
-        view = contentView
+        onboardingView.delegate = self
+        view = onboardingView
     }
 
     override func viewDidLoad() {
@@ -37,6 +34,9 @@ final class OnboardingViewController: UIViewController {
     }
 }
 
-extension OnboardingViewController: OnboardingDisplayable {
-    func displaySomething() { }
+extension OnboardingViewController: OnboardingViewDelegate {
+    func actionButton() {
+        coordinator.navigateToLogin()
+        print("Ir para login")
+    }
 }

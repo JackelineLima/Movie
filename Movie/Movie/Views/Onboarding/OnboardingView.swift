@@ -7,9 +7,14 @@
 
 import UIKit
 
+protocol OnboardingViewDelegate: AnyObject {
+    func actionButton()
+}
+
 final class OnboardingView: UIView {
     
-    private var imagesArray: [OnboardingImageSlider] = []
+    weak var delegate: OnboardingViewDelegate?
+    private var imagesArray: [UIOnboardingImageSlider] = []
     private var currentIndex = 0 {
         didSet {
             setupDescriptionbutton()
@@ -24,8 +29,8 @@ final class OnboardingView: UIView {
         return image
     }()
     
-    private lazy var onboardingView: OnboardingSlider = {
-        let view = OnboardingSlider()
+    private lazy var onboardingView: UIOnboardingSlider = {
+        let view = UIOnboardingSlider()
         view.delegate = self
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
@@ -55,12 +60,17 @@ final class OnboardingView: UIView {
     }
 
     private func buildViewHierarchy() {
+        addSubview(logoImageView)
         addSubview(onboardingView)
         addSubview(onboardingButton)
     }
     
     private func setupConstraints() {
         NSLayoutConstraint.activate([
+            
+            logoImageView.topAnchor.constraint(equalTo: topAnchor, constant: 16),
+            logoImageView.centerXAnchor.constraint(equalTo: centerXAnchor),
+            
             onboardingView.centerXAnchor.constraint(equalTo: centerXAnchor),
             onboardingView.centerYAnchor.constraint(equalTo: centerYAnchor),
             onboardingView.trailingAnchor.constraint(equalTo: trailingAnchor),
@@ -77,11 +87,11 @@ final class OnboardingView: UIView {
         setupActionButton(imagesArray.count)
     }
     
-    private func renderImageSlider() -> [OnboardingImageSlider] {
-        let images: [OnboardingImageSlider] = [
-            OnboardingImageSlider(image: UIImage(named: "onboardingOne"), subtitle: "Filmes, séries e muito mais!"),
-            OnboardingImageSlider(image:  UIImage(named: "onboardingTwo"), subtitle: "Assista em qualquer lugar."),
-            OnboardingImageSlider(image:  UIImage(named: "onboardingThree"), subtitle: "Baixe e assista, com a família.")
+    private func renderImageSlider() -> [UIOnboardingImageSlider] {
+        let images: [UIOnboardingImageSlider] = [
+            UIOnboardingImageSlider(image: UIImage(named: "onboardingOne"), subtitle: "Filmes, séries e muito mais!"),
+            UIOnboardingImageSlider(image:  UIImage(named: "onboardingTwo"), subtitle: "Assista em qualquer lugar."),
+            UIOnboardingImageSlider(image:  UIImage(named: "onboardingThree"), subtitle: "Baixe e assista, com a família.")
         ]
         return images
     }
@@ -91,6 +101,8 @@ final class OnboardingView: UIView {
             if self.currentIndex < count - 1 {
                 self.currentIndex += 1
                 self.onboardingView.scrollView.setContentOffset(CGPoint(x: CGFloat(self.currentIndex) * self.frame.size.width, y: 0), animated: true)
+            } else {
+                self.delegate?.actionButton()
             }
         }
     }
@@ -104,7 +116,7 @@ final class OnboardingView: UIView {
     }
 }
 
-extension OnboardingView: OnboardingSliderDelegate {
+extension OnboardingView: UIOnboardingSliderDelegate {
     
     func didMove(to index: Int) {
         currentIndex = index

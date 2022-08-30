@@ -7,25 +7,25 @@
 
 import UIKit
 
-public protocol OnboardingSliderDelegate: AnyObject {
+public protocol UIOnboardingSliderDelegate: AnyObject {
     func didMove(to index: Int)
 }
 
-public class OnboardingSlider: UIView {
+public class UIOnboardingSlider: UIView {
     
-    weak var delegate: OnboardingSliderDelegate?
-    private var views: [OnboardingImageSlider] = []
+    weak var delegate: UIOnboardingSliderDelegate?
+    private var views: [UIOnboardingImageSlider] = []
     var scrollView: UIScrollView = UIScrollView()
     private var stackView: UIStackView = UIStackView()
-    private var pageControlView: PageControl = PageControl()
+    private var pageControlView: UIPageControlMovie = UIPageControlMovie()
     
-    public convenience init(views: [OnboardingImageSlider]) {
+    public convenience init(views: [UIOnboardingImageSlider]) {
         self.init()
         
         configureView(views: views)
     }
     
-    public func configureView(views: [OnboardingImageSlider]) {
+    public func configureView(views: [UIOnboardingImageSlider]) {
         self.views = views
         setupView()
         clearStack()
@@ -103,7 +103,7 @@ public class OnboardingSlider: UIView {
     }
 }
 
-extension OnboardingSlider: UIScrollViewDelegate {
+extension UIOnboardingSlider: UIScrollViewDelegate {
     
     public func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let _ = scrollView.contentOffset.x / scrollView.frame.size.width

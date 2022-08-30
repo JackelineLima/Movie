@@ -3,16 +3,17 @@
 //  Movie
 //
 //  Created by Jackeline Pires De Lima on 28/08/22.
-//  Copyright (c) 2022 ___ORGANIZATIONNAME___. All rights reserved.
 //
 
 import UIKit
 
 protocol OnboardingCoordinatable: AnyObject {
     func start()
+    func navigateToLogin()
 }
 
 final class OnboardingCoordinator {
+    
     private let navigationController: UINavigationController
     
     init(navigationController: UINavigationController) {
@@ -25,5 +26,10 @@ extension OnboardingCoordinator: OnboardingCoordinatable {
     func start() {
         let controller = OnboardingViewController(coordinator: self)
         navigationController.setViewControllers([controller], animated: true)
+    }
+    
+    func navigateToLogin() {
+        let coordinator = LoginCoordinator(navigationController: navigationController)
+        coordinator.start()
     }
 }

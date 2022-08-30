@@ -7,7 +7,7 @@
 
 import UIKit
 
-public class OnboardingImageSlider: UIView {
+public class UIOnboardingImageSlider: UIView {
     
     var imageView: UIImageView = UIImageView()
     var subtitleLabel: UILabel = UILabel()
