@@ -1,7 +1,4 @@
 # Movie
 Movie aplicativo de filmes
 
-<img src="https://user-images.githubusercontent.com/79378229/187507492-019888b9-b08a-49dc-b76b-929ebd60af94.png" height=“200”> <img src="https://user-images.githubusercontent.com/79378229/187507641-7a8ddfb9-9b49-4c6a-a139-9b496c9bc455.png" height=“200”> <img src="https://user-images.githubusercontent.com/79378229/187507791-d1c9ef4a-4739-448c-bb35-1759bc690336.png" height=“200”> <img src="https://user-images.githubusercontent.com/79378229/187507845-ee18938b-2923-40ff-a84b-d8d58c97395f.png" height=“200”>
-
-
-<img src="https://user-images.githubusercontent.com/79378229/187508787-3b249050-45e0-4ac9-89e7-b601595b8827.png" height="500">
+<img src="https://user-images.githubusercontent.com/79378229/187508787-3b249050-45e0-4ac9-89e7-b601595b8827.png" height="500"> <img src="https://user-images.githubusercontent.com/79378229/187509104-16df4822-aeec-4ddf-8e67-53e06664fec8.png" height="500"> <img src="https://user-images.githubusercontent.com/79378229/187509185-e3ea0441-a966-406b-877d-ec96b0475cd3.png" height="500"> <img src="https://user-images.githubusercontent.com/79378229/187509259-7678c62a-f7b4-427e-ab98-758912901596.png" height="500">
