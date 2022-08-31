@@ -83,11 +83,11 @@ public class UIOnboardingSlider: UIView {
             stackView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
             stackView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
 
-            pageControlView.topAnchor.constraint(equalTo: scrollView.bottomAnchor, constant: 16),
+            pageControlView.topAnchor.constraint(equalTo: scrollView.bottomAnchor, constant: 32),
             pageControlView.leadingAnchor.constraint(equalTo: leadingAnchor),
             pageControlView.trailingAnchor.constraint(equalTo: trailingAnchor),
             pageControlView.bottomAnchor.constraint(equalTo: bottomAnchor),
-            pageControlView.heightAnchor.constraint(equalToConstant: 6)
+            pageControlView.heightAnchor.constraint(equalToConstant: 12)
             
         ])
     }
