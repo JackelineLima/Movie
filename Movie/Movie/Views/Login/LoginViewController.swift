@@ -14,10 +14,10 @@ protocol LoginViewProtocol: AnyObject {
 final class LoginViewController: UIViewController {
     
     private lazy var loginView = LoginView()
-    private let coordinator: LoginCoordinatorProtocol
+    private let viewModel: LoginViewModelProtocol
 
-    init(coordinator: LoginCoordinatorProtocol) {
-      self.coordinator = coordinator
+    init(viewModel: LoginViewModelProtocol) {
+      self.viewModel = viewModel
       super.init(nibName: nil, bundle: .main)
     }
 

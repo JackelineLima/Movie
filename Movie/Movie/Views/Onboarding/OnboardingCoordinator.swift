@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol OnboardingCoordinatable: AnyObject {
+protocol OnboardingCoordinatorProtocol: AnyObject {
     func start()
     func navigateToLogin()
 }
@@ -21,10 +21,11 @@ final class OnboardingCoordinator {
     }
 }
 
-extension OnboardingCoordinator: OnboardingCoordinatable {
+extension OnboardingCoordinator: OnboardingCoordinatorProtocol {
     
     func start() {
-        let controller = OnboardingViewController(coordinator: self)
+        let viewModel = OnboardingViewModel(coodinator: self)
+        let controller = OnboardingViewController(viewModel: viewModel)
         navigationController.setViewControllers([controller], animated: true)
     }
     

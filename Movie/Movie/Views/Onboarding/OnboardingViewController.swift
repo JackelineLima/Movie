@@ -10,10 +10,10 @@ import UIKit
 class OnboardingViewController: UIViewController {
     
     private lazy var onboardingView = OnboardingView()
-    private let coordinator: OnboardingCoordinatable
+    private let viewModel: OnboardingViewModelProtocol
 
-    init(coordinator: OnboardingCoordinatable) {
-      self.coordinator = coordinator
+    init(viewModel: OnboardingViewModelProtocol) {
+      self.viewModel = viewModel
       super.init(nibName: nil, bundle: .main)
     }
 
@@ -28,15 +28,11 @@ class OnboardingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        navigationController?.navigationBar.prefersLargeTitles = true
-//        navigationItem.titleView = contentView.logoImageView
-//        navigationController?.navigationBar.setBackgroundImage(UIImage(named: "logo"), for: .default)
     }
 }
 
 extension OnboardingViewController: OnboardingViewDelegate {
     func actionButton() {
-        coordinator.navigateToLogin()
-        print("Ir para login")
+        viewModel.navigateToLogin()
     }
 }

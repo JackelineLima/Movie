@@ -10,7 +10,7 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-    private var coodinator: OnboardingCoordinatable?
+    private var coodinator: OnboardingCoordinatorProtocol?
     private lazy var navigationController: UINavigationController = {
         let navigation = UINavigationController()
         return navigation

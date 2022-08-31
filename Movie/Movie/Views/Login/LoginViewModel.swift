@@ -7,6 +7,22 @@
 
 import Foundation
 
+protocol LoginViewModelProtocol: AnyObject {
+    func navigateToPlans()
+}
+
 class LoginViewModel {
     
+    private let coordinator: LoginCoordinatorProtocol
+    
+    init(coordinator: LoginCoordinatorProtocol) {
+        self.coordinator = coordinator
+    }
+}
+
+extension LoginViewModel: LoginViewModelProtocol {
+    
+    func navigateToPlans() {
+        
+    }
 }

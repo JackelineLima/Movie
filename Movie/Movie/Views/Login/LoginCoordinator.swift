@@ -9,6 +9,7 @@ import UIKit
 
 protocol LoginCoordinatorProtocol: AnyObject {
     func start()
+    func navigateToPlans()
 }
 
 class LoginCoordinator {
@@ -23,7 +24,12 @@ class LoginCoordinator {
 extension LoginCoordinator: LoginCoordinatorProtocol {
     
     func start() {
-        let controller = LoginViewController(coordinator: self)
+        let viewModel = LoginViewModel(coordinator: self)
+        let controller = LoginViewController(viewModel: viewModel)
         navigationController.setViewControllers([controller], animated: true)
+    }
+    
+    func navigateToPlans() {
+        
     }
 }
