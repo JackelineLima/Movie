@@ -43,9 +43,9 @@ class UIPageControlMovie: UIPageControl {
     private func setupIndicator() {
         for index in 0..<numberOfPages {
             if index == currentPage {
-                setIndicatorImage(nil, forPage: index)
+                setIndicatorImage(UIImage(named: "elipse-background"), forPage: index)
             } else {
-                setIndicatorImage(UIImage(named: "elipse"), forPage: index)
+                setIndicatorImage(UIImage(named: "elipse-onboarding"), forPage: index)
             }
         }
     }
