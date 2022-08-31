@@ -7,7 +7,13 @@
 
 import UIKit
 
+protocol LoginViewDelegate: AnyObject {
+    func actionButton()
+}
+
 final class LoginView: UIView {
+    
+    weak var delegate: LoginViewDelegate?
     
     private lazy var progressLabel: UILabel = {
         let label = UILabel()
@@ -146,6 +152,10 @@ final class LoginView: UIView {
             fontName: UIFontStyle.customFont(name: .f14PrimaryRegular),
             customFontName: UIFontStyle.customFont(name: .f14PrimaryBold),
             highlightedColor: .init(rgb: 0x2D2D2D))
+        
+        loginButton.setAction {
+            self.delegate?.actionButton()
+        }
     }
     
     private func setupTextLayoutTextField(text: String, font: UIFont, textColor: UIColor) -> NSAttributedString {

@@ -17,6 +17,10 @@
 		378F3D1D28BBC0840057ECFA /* UIButtonMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378F3D1C28BBC0840057ECFA /* UIButtonMovie.swift */; };
 		378F3E4E28BBC79C0057ECFA /* UIOnboardingImageSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378F3E4D28BBC79C0057ECFA /* UIOnboardingImageSlider.swift */; };
 		379FC75828BD09D70020C9F8 /* UIPageControlMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FC75728BD09D70020C9F8 /* UIPageControlMovie.swift */; };
+		37A228DD28BFE36E00721E92 /* PlansCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A228D928BFE36E00721E92 /* PlansCoordinator.swift */; };
+		37A228DE28BFE36E00721E92 /* PlansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A228DA28BFE36E00721E92 /* PlansViewController.swift */; };
+		37A228DF28BFE36E00721E92 /* PlansView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A228DB28BFE36E00721E92 /* PlansView.swift */; };
+		37A228E028BFE36E00721E92 /* PlansViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A228DC28BFE36E00721E92 /* PlansViewModel.swift */; };
 		37A2D59728BE99AC000C7220 /* UIString+Extensios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A2D59628BE99AC000C7220 /* UIString+Extensios.swift */; };
 		37B7C71328BE7D98009C45D4 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B7C70F28BE7D98009C45D4 /* LoginCoordinator.swift */; };
 		37B7C71428BE7D98009C45D4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B7C71028BE7D98009C45D4 /* LoginViewController.swift */; };
@@ -65,6 +69,10 @@
 		378F3D1C28BBC0840057ECFA /* UIButtonMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonMovie.swift; sourceTree = "<group>"; };
 		378F3E4D28BBC79C0057ECFA /* UIOnboardingImageSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIOnboardingImageSlider.swift; sourceTree = "<group>"; };
 		379FC75728BD09D70020C9F8 /* UIPageControlMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPageControlMovie.swift; sourceTree = "<group>"; };
+		37A228D928BFE36E00721E92 /* PlansCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansCoordinator.swift; sourceTree = "<group>"; };
+		37A228DA28BFE36E00721E92 /* PlansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansViewController.swift; sourceTree = "<group>"; };
+		37A228DB28BFE36E00721E92 /* PlansView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansView.swift; sourceTree = "<group>"; };
+		37A228DC28BFE36E00721E92 /* PlansViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansViewModel.swift; sourceTree = "<group>"; };
 		37A2D59628BE99AC000C7220 /* UIString+Extensios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIString+Extensios.swift"; sourceTree = "<group>"; };
 		37B7C70F28BE7D98009C45D4 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		37B7C71028BE7D98009C45D4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -147,9 +155,21 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		37A228D728BFE35500721E92 /* Plans */ = {
+			isa = PBXGroup;
+			children = (
+				37A228D928BFE36E00721E92 /* PlansCoordinator.swift */,
+				37A228DA28BFE36E00721E92 /* PlansViewController.swift */,
+				37A228DB28BFE36E00721E92 /* PlansView.swift */,
+				37A228DC28BFE36E00721E92 /* PlansViewModel.swift */,
+			);
+			path = Plans;
+			sourceTree = "<group>";
+		};
 		37B7C70C28BE7D1F009C45D4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				37A228D728BFE35500721E92 /* Plans */,
 				37B7C70E28BE7D82009C45D4 /* Login */,
 				37F7390C28BB1571006ABE8F /* Onboarding */,
 			);
@@ -374,6 +394,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37A228E028BFE36E00721E92 /* PlansViewModel.swift in Sources */,
 				37F738D228BB1526006ABE8F /* AppDelegate.swift in Sources */,
 				37F7390828BB156C006ABE8F /* OnboardingCoordinator.swift in Sources */,
 				37B7C71328BE7D98009C45D4 /* LoginCoordinator.swift in Sources */,
@@ -381,6 +402,7 @@
 				378F3D1B28BBBC900057ECFA /* UIOnboardingSlider.swift in Sources */,
 				379FC75828BD09D70020C9F8 /* UIPageControlMovie.swift in Sources */,
 				37F7390928BB156C006ABE8F /* OnboardingViewController.swift in Sources */,
+				37A228DD28BFE36E00721E92 /* PlansCoordinator.swift in Sources */,
 				37F7390A28BB156C006ABE8F /* OnboardingView.swift in Sources */,
 				37A2D59728BE99AC000C7220 /* UIString+Extensios.swift in Sources */,
 				37F738DC28BB1526006ABE8F /* Movie.xcdatamodeld in Sources */,
@@ -390,7 +412,9 @@
 				37F7390B28BB156C006ABE8F /* OnboardingViewModel.swift in Sources */,
 				378F3D0F28BBB6A30057ECFA /* UIFontStyle.swift in Sources */,
 				378F3D1D28BBC0840057ECFA /* UIButtonMovie.swift in Sources */,
+				37A228DE28BFE36E00721E92 /* PlansViewController.swift in Sources */,
 				37B7C71528BE7D98009C45D4 /* LoginView.swift in Sources */,
+				37A228DF28BFE36E00721E92 /* PlansView.swift in Sources */,
 				37F738D428BB1526006ABE8F /* SceneDelegate.swift in Sources */,
 				37B7C71828BE7DE0009C45D4 /* ViewCodable.swift in Sources */,
 			);

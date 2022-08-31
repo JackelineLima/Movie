@@ -7,11 +7,7 @@
 
 import UIKit
 
-protocol LoginViewProtocol: AnyObject {
-    func displaySomething()
-}
-
-final class LoginViewController: UIViewController {
+class LoginViewController: UIViewController {
     
     private lazy var loginView = LoginView()
     private let viewModel: LoginViewModelProtocol
@@ -26,6 +22,7 @@ final class LoginViewController: UIViewController {
     }
 
     override func loadView() {
+        loginView.delegate = self
         view = loginView
     }
 
@@ -39,6 +36,8 @@ final class LoginViewController: UIViewController {
     }
 }
 
-extension LoginViewController: LoginViewProtocol {
-    func displaySomething() { }
+extension LoginViewController: LoginViewDelegate {
+    func actionButton() {
+        viewModel.navigateToPlans()
+    }
 }
