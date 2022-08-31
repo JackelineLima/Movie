@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3787667C28BFF21A00D31982 /* UIPlansView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787667B28BFF21A00D31982 /* UIPlansView.swift */; };
 		378F3D0D28BBB42F0057ECFA /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378F3D0C28BBB42F0057ECFA /* UIColor.swift */; };
 		378F3D0F28BBB6A30057ECFA /* UIFontStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378F3D0E28BBB6A30057ECFA /* UIFontStyle.swift */; };
 		378F3D1528BBB7360057ECFA /* Ubuntu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 378F3D1128BBB7360057ECFA /* Ubuntu-Light.ttf */; };
@@ -21,6 +22,7 @@
 		37A228DE28BFE36E00721E92 /* PlansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A228DA28BFE36E00721E92 /* PlansViewController.swift */; };
 		37A228DF28BFE36E00721E92 /* PlansView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A228DB28BFE36E00721E92 /* PlansView.swift */; };
 		37A228E028BFE36E00721E92 /* PlansViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A228DC28BFE36E00721E92 /* PlansViewModel.swift */; };
+		37A228E228BFEA8500721E92 /* UICheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A228E128BFEA8500721E92 /* UICheckView.swift */; };
 		37A2D59728BE99AC000C7220 /* UIString+Extensios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A2D59628BE99AC000C7220 /* UIString+Extensios.swift */; };
 		37B7C71328BE7D98009C45D4 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B7C70F28BE7D98009C45D4 /* LoginCoordinator.swift */; };
 		37B7C71428BE7D98009C45D4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B7C71028BE7D98009C45D4 /* LoginViewController.swift */; };
@@ -59,6 +61,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3787667B28BFF21A00D31982 /* UIPlansView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPlansView.swift; sourceTree = "<group>"; };
 		378F3D0C28BBB42F0057ECFA /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		378F3D0E28BBB6A30057ECFA /* UIFontStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontStyle.swift; sourceTree = "<group>"; };
 		378F3D1128BBB7360057ECFA /* Ubuntu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Ubuntu-Light.ttf"; path = "../../../../PhotoFeed/PhotoFeed/PhotoFeed/Fonts/Ubuntu-Light.ttf"; sourceTree = "<group>"; };
@@ -73,6 +76,7 @@
 		37A228DA28BFE36E00721E92 /* PlansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansViewController.swift; sourceTree = "<group>"; };
 		37A228DB28BFE36E00721E92 /* PlansView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansView.swift; sourceTree = "<group>"; };
 		37A228DC28BFE36E00721E92 /* PlansViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansViewModel.swift; sourceTree = "<group>"; };
+		37A228E128BFEA8500721E92 /* UICheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICheckView.swift; sourceTree = "<group>"; };
 		37A2D59628BE99AC000C7220 /* UIString+Extensios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIString+Extensios.swift"; sourceTree = "<group>"; };
 		37B7C70F28BE7D98009C45D4 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		37B7C71028BE7D98009C45D4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +126,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3787667D28BFF57600D31982 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				37A228E128BFEA8500721E92 /* UICheckView.swift */,
+				3787667B28BFF21A00D31982 /* UIPlansView.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
 		378F3D0B28BBB41C0057ECFA /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +171,7 @@
 		37A228D728BFE35500721E92 /* Plans */ = {
 			isa = PBXGroup;
 			children = (
+				3787667D28BFF57600D31982 /* Commons */,
 				37A228D928BFE36E00721E92 /* PlansCoordinator.swift */,
 				37A228DA28BFE36E00721E92 /* PlansViewController.swift */,
 				37A228DB28BFE36E00721E92 /* PlansView.swift */,
@@ -403,8 +417,10 @@
 				379FC75828BD09D70020C9F8 /* UIPageControlMovie.swift in Sources */,
 				37F7390928BB156C006ABE8F /* OnboardingViewController.swift in Sources */,
 				37A228DD28BFE36E00721E92 /* PlansCoordinator.swift in Sources */,
+				37A228E228BFEA8500721E92 /* UICheckView.swift in Sources */,
 				37F7390A28BB156C006ABE8F /* OnboardingView.swift in Sources */,
 				37A2D59728BE99AC000C7220 /* UIString+Extensios.swift in Sources */,
+				3787667C28BFF21A00D31982 /* UIPlansView.swift in Sources */,
 				37F738DC28BB1526006ABE8F /* Movie.xcdatamodeld in Sources */,
 				378F3D0D28BBB42F0057ECFA /* UIColor.swift in Sources */,
 				37B7C71628BE7D98009C45D4 /* LoginViewModel.swift in Sources */,

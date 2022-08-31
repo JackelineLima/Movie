@@ -11,7 +11,7 @@ protocol LoginViewDelegate: AnyObject {
     func actionButton()
 }
 
-final class LoginView: UIView {
+final class LoginView: UIView , ViewCodable {
     
     weak var delegate: LoginViewDelegate?
     
@@ -91,13 +91,6 @@ final class LoginView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 
-    func setupView() {
-        backgroundColor = .init(rgb: 0xD8D0B8)
-        buildViewHierarchy()
-        setupConstraints()
-        setupAdditionalConfiguration()
-    }
-
     func buildViewHierarchy() {
         addSubview(progressLabel)
         addSubview(titleLabel)
@@ -145,6 +138,8 @@ final class LoginView: UIView {
     }
     
     func setupAdditionalConfiguration() {
+        backgroundColor = .init(rgb: 0xD8D0B8)
+        
         let progressLabelText = "PASSO 1 DE 3"
         progressLabel.attributedText = progressLabelText.formattText(
             text: progressLabelText,
