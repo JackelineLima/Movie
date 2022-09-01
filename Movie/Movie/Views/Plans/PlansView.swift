@@ -13,7 +13,14 @@ final class PlansView: UIView, ViewCodable {
         let scroll = UIScrollView()
         scroll.translatesAutoresizingMaskIntoConstraints = false
         scroll.showsVerticalScrollIndicator = false
+        scroll.autoresizingMask = .flexibleHeight
         return scroll
+    }()
+    
+    private lazy var contentView: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
     }()
     
     private lazy var progressLabel: UILabelMovie = {
@@ -129,16 +136,6 @@ final class PlansView: UIView, ViewCodable {
         super.init(frame: frame)
         setupView()
     }
-    
-    private lazy var stackViewMain: UIStackView = {
-        let stackView = UIStackView()
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.axis = .vertical
-        stackView.alignment = .fill
-        stackView.distribution = .fill
-        stackView.spacing = 37.0
-        return stackView
-    }()
 
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -146,21 +143,19 @@ final class PlansView: UIView, ViewCodable {
 
     func buildViewHierarchy() {
         addSubview(scrollView)
-        scrollView.addSubview(stackViewMain)
-        stackViewMain.addArrangedSubview(progressLabel)
-        stackViewMain.addArrangedSubview(titleLabel)
-        stackViewMain.addArrangedSubview(stackView)
+        scrollView.addSubview(contentView)
+        contentView.addSubViews([progressLabel, titleLabel, stackView])
         stackView.addArrangedSubview(iconCommitmentView)
         stackView.addArrangedSubview(iconContentView)
         stackView.addArrangedSubview(iconWatchView)
-        stackViewMain.addArrangedSubview(plansStackView)
+        contentView.addSubview(plansStackView)
         plansStackView.addArrangedSubview(selectPlanView)
         plansStackView.addArrangedSubview(selectPlanpPremiumView)
-        stackViewMain.addArrangedSubview(infoPlansStackView)
+        contentView.addSubview(infoPlansStackView)
         infoPlansStackView.addArrangedSubview(valuePlanView)
         infoPlansStackView.addArrangedSubview(adjectivesPlanView)
         infoPlansStackView.addArrangedSubview(resolutionsPlanView)
-        stackViewMain.addArrangedSubview(planButton)
+        contentView.addSubview(planButton)
     }
     
     func setupConstraints() {
@@ -171,37 +166,35 @@ final class PlansView: UIView, ViewCodable {
             scrollView.trailingAnchor.constraint(equalTo: trailingAnchor),
             scrollView.bottomAnchor.constraint(equalTo: bottomAnchor),
             
-            stackViewMain.topAnchor.constraint(equalTo: scrollView.topAnchor),
-            stackViewMain.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
-            stackViewMain.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
-            stackViewMain.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
-            stackViewMain.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
+            contentView.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor),
+            contentView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
+            contentView.topAnchor.constraint(equalTo: scrollView.topAnchor),
+            contentView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
             
-            progressLabel.topAnchor.constraint(equalTo: stackViewMain.topAnchor),
-            progressLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 32),
-            progressLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -32),
-            
+            progressLabel.topAnchor.constraint(equalTo: contentView.topAnchor),
+            progressLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 32),
+            progressLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -32),
+
             titleLabel.topAnchor.constraint(equalTo: progressLabel.bottomAnchor, constant: 40),
-            titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 32),
-            titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -32),
-            
+            titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 32),
+            titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -32),
+
             stackView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 40),
-            stackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 24),
-            stackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -24),
-            
+            stackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 24),
+            stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -24),
+
             plansStackView.topAnchor.constraint(equalTo: stackView.bottomAnchor, constant: 40),
-            plansStackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 32),
-            plansStackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -32),
+            plansStackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 32),
+            plansStackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -32),
             plansStackView.heightAnchor.constraint(equalToConstant: 80),
-            
+
             infoPlansStackView.topAnchor.constraint(equalTo: plansStackView.bottomAnchor, constant: 30),
-            infoPlansStackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 32),
-            infoPlansStackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -32),
-            
+            infoPlansStackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 32),
+            infoPlansStackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -32),
+
             planButton.topAnchor.constraint(equalTo: infoPlansStackView.bottomAnchor, constant: 54),
-            planButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 100),
-            planButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -100),
-            
+            planButton.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
+            planButton.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -54)
         ])
     }
     
