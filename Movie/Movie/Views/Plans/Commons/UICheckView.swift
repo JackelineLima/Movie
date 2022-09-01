@@ -40,7 +40,7 @@ class UICheckView: UIView, ViewCodable {
             icon.leadingAnchor.constraint(equalTo: leadingAnchor),
             icon.bottomAnchor.constraint(equalTo: bottomAnchor),
             
-            titleLabel.leadingAnchor.constraint(equalTo: icon.trailingAnchor, constant: 8),
+            titleLabel.leadingAnchor.constraint(equalTo: icon.trailingAnchor, constant: 6),
             titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor),
             titleLabel.centerYAnchor.constraint(equalTo: icon.centerYAnchor),
         ])

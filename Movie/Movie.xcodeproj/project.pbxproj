@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3787667C28BFF21A00D31982 /* UIPlansView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787667B28BFF21A00D31982 /* UIPlansView.swift */; };
+		378897C628BFFE310042F455 /* UIInfoPlansView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378897C528BFFE310042F455 /* UIInfoPlansView.swift */; };
+		378897C828C02F160042F455 /* UILabelMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378897C728C02F160042F455 /* UILabelMovie.swift */; };
 		378F3D0D28BBB42F0057ECFA /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378F3D0C28BBB42F0057ECFA /* UIColor.swift */; };
 		378F3D0F28BBB6A30057ECFA /* UIFontStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378F3D0E28BBB6A30057ECFA /* UIFontStyle.swift */; };
 		378F3D1528BBB7360057ECFA /* Ubuntu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 378F3D1128BBB7360057ECFA /* Ubuntu-Light.ttf */; };
@@ -62,6 +64,8 @@
 
 /* Begin PBXFileReference section */
 		3787667B28BFF21A00D31982 /* UIPlansView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPlansView.swift; sourceTree = "<group>"; };
+		378897C528BFFE310042F455 /* UIInfoPlansView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIInfoPlansView.swift; sourceTree = "<group>"; };
+		378897C728C02F160042F455 /* UILabelMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelMovie.swift; sourceTree = "<group>"; };
 		378F3D0C28BBB42F0057ECFA /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		378F3D0E28BBB6A30057ECFA /* UIFontStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontStyle.swift; sourceTree = "<group>"; };
 		378F3D1128BBB7360057ECFA /* Ubuntu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Ubuntu-Light.ttf"; path = "../../../../PhotoFeed/PhotoFeed/PhotoFeed/Fonts/Ubuntu-Light.ttf"; sourceTree = "<group>"; };
@@ -131,6 +135,8 @@
 			children = (
 				37A228E128BFEA8500721E92 /* UICheckView.swift */,
 				3787667B28BFF21A00D31982 /* UIPlansView.swift */,
+				378897C528BFFE310042F455 /* UIInfoPlansView.swift */,
+				378897C728C02F160042F455 /* UILabelMovie.swift */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -417,7 +423,9 @@
 				379FC75828BD09D70020C9F8 /* UIPageControlMovie.swift in Sources */,
 				37F7390928BB156C006ABE8F /* OnboardingViewController.swift in Sources */,
 				37A228DD28BFE36E00721E92 /* PlansCoordinator.swift in Sources */,
+				378897C628BFFE310042F455 /* UIInfoPlansView.swift in Sources */,
 				37A228E228BFEA8500721E92 /* UICheckView.swift in Sources */,
+				378897C828C02F160042F455 /* UILabelMovie.swift in Sources */,
 				37F7390A28BB156C006ABE8F /* OnboardingView.swift in Sources */,
 				37A2D59728BE99AC000C7220 /* UIString+Extensios.swift in Sources */,
 				3787667C28BFF21A00D31982 /* UIPlansView.swift in Sources */,
