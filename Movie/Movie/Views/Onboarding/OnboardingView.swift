@@ -60,10 +60,7 @@ final class OnboardingView: UIView {
     }
 
     private func buildViewHierarchy() {
-        addSubview(logoImageView)
-        addSubview(onboardingView)
-        addSubview(onboardingButton)
-    }
+        addSubViews([logoImageView, onboardingView, onboardingButton])    }
     
     private func setupConstraints() {
         NSLayoutConstraint.activate([

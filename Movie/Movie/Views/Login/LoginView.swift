@@ -92,14 +92,15 @@ final class LoginView: UIView , ViewCodable {
     }
 
     func buildViewHierarchy() {
-        addSubview(progressLabel)
-        addSubview(titleLabel)
-        addSubview(personalDataLabel)
-        addSubview(emailTextField)
-        addSubview(passwordTextField)
-        addSubview(loginButton)
-        addSubview(borderEmailView)
-        addSubview(borderPasswordView)
+        addSubViews([progressLabel,
+                     titleLabel,
+                     personalDataLabel,
+                     emailTextField,
+                     passwordTextField,
+                     loginButton,
+                     borderEmailView,
+                     borderPasswordView
+                    ])
     }
     
     func setupConstraints() {

@@ -19,6 +19,7 @@
 		378F3D1B28BBBC900057ECFA /* UIOnboardingSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378F3D1A28BBBC900057ECFA /* UIOnboardingSlider.swift */; };
 		378F3D1D28BBC0840057ECFA /* UIButtonMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378F3D1C28BBC0840057ECFA /* UIButtonMovie.swift */; };
 		378F3E4E28BBC79C0057ECFA /* UIOnboardingImageSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378F3E4D28BBC79C0057ECFA /* UIOnboardingImageSlider.swift */; };
+		3798FC2928C6B8ED009AB44F /* UIStackView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3798FC2828C6B8ED009AB44F /* UIStackView+Extensions.swift */; };
 		379FC75828BD09D70020C9F8 /* UIPageControlMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FC75728BD09D70020C9F8 /* UIPageControlMovie.swift */; };
 		37A228DD28BFE36E00721E92 /* PlansCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A228D928BFE36E00721E92 /* PlansCoordinator.swift */; };
 		37A228DE28BFE36E00721E92 /* PlansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A228DA28BFE36E00721E92 /* PlansViewController.swift */; };
@@ -76,6 +77,7 @@
 		378F3D1A28BBBC900057ECFA /* UIOnboardingSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIOnboardingSlider.swift; sourceTree = "<group>"; };
 		378F3D1C28BBC0840057ECFA /* UIButtonMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonMovie.swift; sourceTree = "<group>"; };
 		378F3E4D28BBC79C0057ECFA /* UIOnboardingImageSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIOnboardingImageSlider.swift; sourceTree = "<group>"; };
+		3798FC2828C6B8ED009AB44F /* UIStackView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extensions.swift"; sourceTree = "<group>"; };
 		379FC75728BD09D70020C9F8 /* UIPageControlMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPageControlMovie.swift; sourceTree = "<group>"; };
 		37A228D928BFE36E00721E92 /* PlansCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansCoordinator.swift; sourceTree = "<group>"; };
 		37A228DA28BFE36E00721E92 /* PlansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansViewController.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				37B7C71728BE7DE0009C45D4 /* ViewCodable.swift */,
 				37A2D59628BE99AC000C7220 /* UIString+Extensios.swift */,
 				37D1E98528C0E54500DBBBFA /* UIView+Extensions.swift */,
+				3798FC2828C6B8ED009AB44F /* UIStackView+Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -242,9 +245,9 @@
 		37F738D028BB1526006ABE8F /* Movie */ = {
 			isa = PBXGroup;
 			children = (
+				37B7C70D28BE7D42009C45D4 /* AppDelegate */,
 				378F3D0B28BBB41C0057ECFA /* Utils */,
 				378F3D1028BBB6D50057ECFA /* Fonts */,
-				37B7C70D28BE7D42009C45D4 /* AppDelegate */,
 				378F3D1928BBBC730057ECFA /* Components */,
 				37B7C70C28BE7D1F009C45D4 /* Views */,
 				37F738DD28BB1529006ABE8F /* Assets.xcassets */,
@@ -445,6 +448,7 @@
 				37A228DF28BFE36E00721E92 /* PlansView.swift in Sources */,
 				37F738D428BB1526006ABE8F /* SceneDelegate.swift in Sources */,
 				37B7C71828BE7DE0009C45D4 /* ViewCodable.swift in Sources */,
+				3798FC2928C6B8ED009AB44F /* UIStackView+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
