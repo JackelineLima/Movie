@@ -30,6 +30,7 @@ extension LoginCoordinator: LoginCoordinatorProtocol {
     }
     
     func navigateToPlans() {
-        
+        let coordinator = PlansCoordinator(navigationController: navigationController)
+        coordinator.start()
     }
 }

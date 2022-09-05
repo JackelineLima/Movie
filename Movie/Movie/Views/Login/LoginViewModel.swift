@@ -23,6 +23,6 @@ class LoginViewModel {
 extension LoginViewModel: LoginViewModelProtocol {
     
     func navigateToPlans() {
-        
+        coordinator.navigateToPlans()
     }
 }

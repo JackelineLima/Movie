@@ -5,9 +5,9 @@
 //  Created by Jackeline Pires De Lima on 30/08/22.
 //
 
-import Foundation
+import UIKit
 
-public protocol ViewCodable: AnyObject {
+public protocol ViewCodable: UIView {
     func buildViewHierarchy()
     func setupConstraints()
     func setupAdditionalConfiguration()

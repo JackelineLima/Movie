@@ -7,7 +7,13 @@
 
 import UIKit
 
-final class LoginView: UIView {
+protocol LoginViewDelegate: AnyObject {
+    func actionButton()
+}
+
+final class LoginView: UIView , ViewCodable {
+    
+    weak var delegate: LoginViewDelegate?
     
     private lazy var progressLabel: UILabel = {
         let label = UILabel()
@@ -85,22 +91,16 @@ final class LoginView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 
-    func setupView() {
-        backgroundColor = .init(rgb: 0xD8D0B8)
-        buildViewHierarchy()
-        setupConstraints()
-        setupAdditionalConfiguration()
-    }
-
     func buildViewHierarchy() {
-        addSubview(progressLabel)
-        addSubview(titleLabel)
-        addSubview(personalDataLabel)
-        addSubview(emailTextField)
-        addSubview(passwordTextField)
-        addSubview(loginButton)
-        addSubview(borderEmailView)
-        addSubview(borderPasswordView)
+        addSubViews([progressLabel,
+                     titleLabel,
+                     personalDataLabel,
+                     emailTextField,
+                     passwordTextField,
+                     loginButton,
+                     borderEmailView,
+                     borderPasswordView
+                    ])
     }
     
     func setupConstraints() {
@@ -139,6 +139,8 @@ final class LoginView: UIView {
     }
     
     func setupAdditionalConfiguration() {
+        backgroundColor = .init(rgb: 0xD8D0B8)
+        
         let progressLabelText = "PASSO 1 DE 3"
         progressLabel.attributedText = progressLabelText.formattText(
             text: progressLabelText,
@@ -146,6 +148,10 @@ final class LoginView: UIView {
             fontName: UIFontStyle.customFont(name: .f14PrimaryRegular),
             customFontName: UIFontStyle.customFont(name: .f14PrimaryBold),
             highlightedColor: .init(rgb: 0x2D2D2D))
+        
+        loginButton.setAction {
+            self.delegate?.actionButton()
+        }
     }
     
     private func setupTextLayoutTextField(text: String, font: UIFont, textColor: UIColor) -> NSAttributedString {
