@@ -8,7 +8,7 @@
 import Foundation
 
 protocol PlansViewModelProtocol {
-    
+    func navigateToPaymentData()
 }
 
 class PlansViewModel {
@@ -23,4 +23,7 @@ class PlansViewModel {
 
 extension PlansViewModel: PlansViewModelProtocol {
     
+    func navigateToPaymentData() {
+        coordinator.navigateToPaymentData()
+    }
 }

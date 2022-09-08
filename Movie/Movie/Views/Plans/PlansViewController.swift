@@ -22,10 +22,18 @@ class PlansViewController: UIViewController {
     }
 
     override func loadView() {
+        plansView.delegate = self
         view = plansView
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+}
+
+extension PlansViewController: PlansViewDelegate {
+    
+    func onTapButton() {
+        viewModel.navigateToPaymentData()
     }
 }

@@ -9,6 +9,7 @@ import UIKit
 
 protocol PlansCoordinatatorProtocol: AnyObject {
     func start()
+    func navigateToPaymentData()
 }
 
 class PlansCoordinator {
@@ -26,5 +27,10 @@ extension PlansCoordinator: PlansCoordinatatorProtocol {
         let viewModel = PlansViewModel(coordinator: self)
         let controller = PlansViewController(viewModel: viewModel)
         navigationController.setViewControllers([controller], animated: true)
+    }
+    
+    func navigateToPaymentData() {
+        let coordinator = PaymentDataCoordinator(navigationController: navigationController)
+        coordinator.start()
     }
 }
