@@ -7,7 +7,13 @@
 
 import UIKit
 
+protocol PlansViewDelegate: AnyObject {
+    func onTapButton()
+}
+
 final class PlansView: UIView, ViewCodable {
+    
+    weak var delegate: PlansViewDelegate?
     
     private lazy var scrollView: UIScrollView = {
         let scroll = UIScrollView()
@@ -71,6 +77,7 @@ final class PlansView: UIView, ViewCodable {
         let button = UIButtonMovie()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setupLayout(style: .buttonWithoutBackground, title: "Próximo")
+        button.addTarget(self, action: #selector(onTapButton), for: .touchUpInside)
         return button
     }()
     
@@ -205,5 +212,9 @@ final class PlansView: UIView, ViewCodable {
             customFontName: UIFontStyle.customFont(name: .f14PrimaryBold),
             highlightedColor: .init(rgb: 0x2D2D2D))
         )
+    }
+    
+    @objc private func onTapButton() {
+        delegate?.onTapButton()
     }
 }

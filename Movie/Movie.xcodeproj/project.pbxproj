@@ -32,6 +32,10 @@
 		37B7C71528BE7D98009C45D4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B7C71128BE7D98009C45D4 /* LoginView.swift */; };
 		37B7C71628BE7D98009C45D4 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B7C71228BE7D98009C45D4 /* LoginViewModel.swift */; };
 		37B7C71828BE7DE0009C45D4 /* ViewCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B7C71728BE7DE0009C45D4 /* ViewCodable.swift */; };
+		37CA1BE128CA2BFE00DA1BAF /* PaymentDataCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CA1BDD28CA2BFE00DA1BAF /* PaymentDataCoordinator.swift */; };
+		37CA1BE228CA2BFE00DA1BAF /* PaymentDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CA1BDE28CA2BFE00DA1BAF /* PaymentDataViewController.swift */; };
+		37CA1BE328CA2BFE00DA1BAF /* PaymentDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CA1BDF28CA2BFE00DA1BAF /* PaymentDataView.swift */; };
+		37CA1BE428CA2BFE00DA1BAF /* PaymentDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CA1BE028CA2BFE00DA1BAF /* PaymentDataViewModel.swift */; };
 		37D1E98628C0E54500DBBBFA /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D1E98528C0E54500DBBBFA /* UIView+Extensions.swift */; };
 		37F738D228BB1526006ABE8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F738D128BB1526006ABE8F /* AppDelegate.swift */; };
 		37F738D428BB1526006ABE8F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F738D328BB1526006ABE8F /* SceneDelegate.swift */; };
@@ -90,6 +94,10 @@
 		37B7C71128BE7D98009C45D4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		37B7C71228BE7D98009C45D4 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		37B7C71728BE7DE0009C45D4 /* ViewCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodable.swift; sourceTree = "<group>"; };
+		37CA1BDD28CA2BFE00DA1BAF /* PaymentDataCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentDataCoordinator.swift; sourceTree = "<group>"; };
+		37CA1BDE28CA2BFE00DA1BAF /* PaymentDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentDataViewController.swift; sourceTree = "<group>"; };
+		37CA1BDF28CA2BFE00DA1BAF /* PaymentDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentDataView.swift; sourceTree = "<group>"; };
+		37CA1BE028CA2BFE00DA1BAF /* PaymentDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentDataViewModel.swift; sourceTree = "<group>"; };
 		37D1E98528C0E54500DBBBFA /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		37F738CE28BB1526006ABE8F /* Movie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37F738D128BB1526006ABE8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -195,6 +203,7 @@
 		37B7C70C28BE7D1F009C45D4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				37CA1BDC28CA2BE700DA1BAF /* PaymentData */,
 				37A228D728BFE35500721E92 /* Plans */,
 				37B7C70E28BE7D82009C45D4 /* Login */,
 				37F7390C28BB1571006ABE8F /* Onboarding */,
@@ -220,6 +229,17 @@
 				37B7C71228BE7D98009C45D4 /* LoginViewModel.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		37CA1BDC28CA2BE700DA1BAF /* PaymentData */ = {
+			isa = PBXGroup;
+			children = (
+				37CA1BDD28CA2BFE00DA1BAF /* PaymentDataCoordinator.swift */,
+				37CA1BDE28CA2BFE00DA1BAF /* PaymentDataViewController.swift */,
+				37CA1BDF28CA2BFE00DA1BAF /* PaymentDataView.swift */,
+				37CA1BE028CA2BFE00DA1BAF /* PaymentDataViewModel.swift */,
+			);
+			path = PaymentData;
 			sourceTree = "<group>";
 		};
 		37F738C528BB1526006ABE8F = {
@@ -423,6 +443,8 @@
 				37A228E028BFE36E00721E92 /* PlansViewModel.swift in Sources */,
 				37F738D228BB1526006ABE8F /* AppDelegate.swift in Sources */,
 				37F7390828BB156C006ABE8F /* OnboardingCoordinator.swift in Sources */,
+				37CA1BE428CA2BFE00DA1BAF /* PaymentDataViewModel.swift in Sources */,
+				37CA1BE328CA2BFE00DA1BAF /* PaymentDataView.swift in Sources */,
 				37B7C71328BE7D98009C45D4 /* LoginCoordinator.swift in Sources */,
 				37B7C71428BE7D98009C45D4 /* LoginViewController.swift in Sources */,
 				378F3D1B28BBBC900057ECFA /* UIOnboardingSlider.swift in Sources */,
@@ -446,9 +468,11 @@
 				37A228DE28BFE36E00721E92 /* PlansViewController.swift in Sources */,
 				37B7C71528BE7D98009C45D4 /* LoginView.swift in Sources */,
 				37A228DF28BFE36E00721E92 /* PlansView.swift in Sources */,
+				37CA1BE228CA2BFE00DA1BAF /* PaymentDataViewController.swift in Sources */,
 				37F738D428BB1526006ABE8F /* SceneDelegate.swift in Sources */,
 				37B7C71828BE7DE0009C45D4 /* ViewCodable.swift in Sources */,
 				3798FC2928C6B8ED009AB44F /* UIStackView+Extensions.swift in Sources */,
+				37CA1BE128CA2BFE00DA1BAF /* PaymentDataCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
