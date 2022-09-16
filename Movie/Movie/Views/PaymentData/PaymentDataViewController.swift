@@ -3,7 +3,6 @@
 //  Movie
 //
 //  Created by Jackeline Pires De Lima on 08/09/22.
-//  Copyright (c) 2022 ___ORGANIZATIONNAME___. All rights reserved.
 //
 
 import UIKit
