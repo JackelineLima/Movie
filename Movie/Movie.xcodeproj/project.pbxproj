@@ -28,6 +28,8 @@
 		37A228E028BFE36E00721E92 /* PlansViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A228DC28BFE36E00721E92 /* PlansViewModel.swift */; };
 		37A228E228BFEA8500721E92 /* UICheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A228E128BFEA8500721E92 /* UICheckView.swift */; };
 		37A2D59728BE99AC000C7220 /* UIString+Extensios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A2D59628BE99AC000C7220 /* UIString+Extensios.swift */; };
+		37AFF91528D5081A00C58A1A /* Futura-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37AFF91428D5081A00C58A1A /* Futura-Medium.ttf */; };
+		37AFF91728D509B400C58A1A /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37AFF91628D509B400C58A1A /* Inter-Regular.ttf */; };
 		37B34F9F28D4BF40009BC89D /* UIButton.Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B34F9E28D4BF40009BC89D /* UIButton.Configuration.swift */; };
 		37B7C71328BE7D98009C45D4 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B7C70F28BE7D98009C45D4 /* LoginCoordinator.swift */; };
 		37B7C71428BE7D98009C45D4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B7C71028BE7D98009C45D4 /* LoginViewController.swift */; };
@@ -93,6 +95,8 @@
 		37A228DC28BFE36E00721E92 /* PlansViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansViewModel.swift; sourceTree = "<group>"; };
 		37A228E128BFEA8500721E92 /* UICheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICheckView.swift; sourceTree = "<group>"; };
 		37A2D59628BE99AC000C7220 /* UIString+Extensios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIString+Extensios.swift"; sourceTree = "<group>"; };
+		37AFF91428D5081A00C58A1A /* Futura-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Futura-Medium.ttf"; sourceTree = "<group>"; };
+		37AFF91628D509B400C58A1A /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
 		37B34F9E28D4BF40009BC89D /* UIButton.Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.Configuration.swift; sourceTree = "<group>"; };
 		37B7C70F28BE7D98009C45D4 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		37B7C71028BE7D98009C45D4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -180,6 +184,8 @@
 				378F3D1128BBB7360057ECFA /* Ubuntu-Light.ttf */,
 				378F3D1428BBB7360057ECFA /* Ubuntu-Medium.ttf */,
 				378F3D1228BBB7360057ECFA /* Ubuntu-Regular.ttf */,
+				37AFF91428D5081A00C58A1A /* Futura-Medium.ttf */,
+				37AFF91628D509B400C58A1A /* Inter-Regular.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -431,7 +437,9 @@
 				378F3D1628BBB7360057ECFA /* Ubuntu-Regular.ttf in Resources */,
 				378F3D1828BBB7360057ECFA /* Ubuntu-Medium.ttf in Resources */,
 				37F738E128BB1529006ABE8F /* LaunchScreen.storyboard in Resources */,
+				37AFF91528D5081A00C58A1A /* Futura-Medium.ttf in Resources */,
 				378F3D1528BBB7360057ECFA /* Ubuntu-Light.ttf in Resources */,
+				37AFF91728D509B400C58A1A /* Inter-Regular.ttf in Resources */,
 				37F738DE28BB1529006ABE8F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

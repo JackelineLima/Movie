@@ -16,6 +16,10 @@ public struct UIFontWeight {
     public static let primaryRegular: String = "Ubuntu-Regular"
     //700
     public static let primaryBold: String = "Ubuntu-Bold"
+    
+    public static let secondaryMedium: String = "Futura-Medium"
+    
+    public static let interRegular: String = "Inter-Regular"
 }
 
 public enum UIFontStyle {
@@ -33,6 +37,11 @@ public enum UIFontStyle {
     case f23PrimaryBold
     case f29PrimaryBold
     
+    case f18SecondaryMedium
+    case f20SecondaryMedium
+    
+    case f16InterRegular
+    
     public var weight: String {
         switch self {
         case .f11PrimaryRegular, .f13PrimaryRegular, .f14PrimaryRegular, .f16PrimaryRegular, .f18PrimaryRegular:
@@ -43,6 +52,10 @@ public enum UIFontStyle {
             return UIFontWeight.primaryLight
         case .f18PrimaryMedium:
             return UIFontWeight.primaryMedium
+        case .f18SecondaryMedium, .f20SecondaryMedium:
+            return UIFontWeight.secondaryMedium
+        case .f16InterRegular:
+            return UIFontWeight.interRegular
         }
         
     }
@@ -58,11 +71,11 @@ public enum UIFontStyle {
             size = 14
         case .f15PrimaryLight:
             size = 15
-        case .f16PrimaryBold, .f16PrimaryRegular:
+        case .f16PrimaryBold, .f16PrimaryRegular, .f16InterRegular:
             size = 16
-        case .f18PrimaryRegular, .f18PrimaryMedium, .f18PrimaryBold:
+        case .f18PrimaryRegular, .f18PrimaryMedium, .f18PrimaryBold, .f18SecondaryMedium:
             size = 18
-        case .f20PrimaryBold:
+        case .f20PrimaryBold, .f20SecondaryMedium:
             size = 20
         case .f23PrimaryBold:
             size = 23

@@ -64,7 +64,7 @@ class WIAlertView: UIView {
         titleLabel.text = alertTitle
         titleLabel.textAlignment = .center
         titleLabel.numberOfLines = 0
-        titleLabel.font = UIFontStyle.customFont(name: .f18PrimaryMedium)
+        titleLabel.font = UIFontStyle.customFont(name: .f20SecondaryMedium)
         addSubview(titleLabel)
         NSLayoutConstraint.activate([
             titleLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 24),
@@ -78,7 +78,7 @@ class WIAlertView: UIView {
         messageLabel.text = message
         messageLabel.textAlignment = .center
         messageLabel.numberOfLines = 0
-        messageLabel.font = UIFontStyle.customFont(name: .f18PrimaryMedium)
+        messageLabel.font = UIFontStyle.customFont(name: .f16InterRegular)
         addSubview(messageLabel)
         NSLayoutConstraint.activate([
             messageLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 24),
@@ -92,7 +92,7 @@ class WIAlertView: UIView {
         addSubview(button)
         button.setTitle("Iniciar", for: .normal)
         button.setTitleColor(.black, for: .normal)
-        button.titleLabel?.font = UIFontStyle.customFont(name: .f20PrimaryBold)
+        button.titleLabel?.font = UIFontStyle.customFont(name: .f18SecondaryMedium)
         button.layer.cornerRadius = 25.0
         button.layer.borderWidth = 1
         button.layer.borderColor = UIColor.black.cgColor

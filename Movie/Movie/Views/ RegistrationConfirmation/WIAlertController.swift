@@ -42,9 +42,8 @@ public class WIAlertController: UIViewController {
         NSLayoutConstraint.activate([
             mainAlertSubview.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             mainAlertSubview.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            mainAlertSubview.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 36.0),
-            mainAlertSubview.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -36.0),
-//            mainAlertSubview.heightAnchor.constraint(equalToConstant: 300)
+            mainAlertSubview.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 60),
+            mainAlertSubview.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -60),
         ])
     }
     

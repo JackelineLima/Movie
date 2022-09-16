@@ -8,6 +8,8 @@
 		<string>Ubuntu-Medium.ttf</string>
 		<string>Ubuntu-Light.ttf</string>
 		<string>Ubuntu-Bold.ttf</string>
+		<string>Futura-Medium.ttf</string>
+		<string>Inter-Regular.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
