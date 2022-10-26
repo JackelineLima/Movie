@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3732793D28D21A720016996C /* WIAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3732793C28D21A720016996C /* WIAlertView.swift */; };
 		3787667C28BFF21A00D31982 /* UIPlansView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787667B28BFF21A00D31982 /* UIPlansView.swift */; };
 		378897C628BFFE310042F455 /* UIInfoPlansView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378897C528BFFE310042F455 /* UIInfoPlansView.swift */; };
 		378897C828C02F160042F455 /* UILabelMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378897C728C02F160042F455 /* UILabelMovie.swift */; };
@@ -27,11 +28,15 @@
 		37A228E028BFE36E00721E92 /* PlansViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A228DC28BFE36E00721E92 /* PlansViewModel.swift */; };
 		37A228E228BFEA8500721E92 /* UICheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A228E128BFEA8500721E92 /* UICheckView.swift */; };
 		37A2D59728BE99AC000C7220 /* UIString+Extensios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A2D59628BE99AC000C7220 /* UIString+Extensios.swift */; };
+		37AFF91528D5081A00C58A1A /* Futura-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37AFF91428D5081A00C58A1A /* Futura-Medium.ttf */; };
+		37AFF91728D509B400C58A1A /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37AFF91628D509B400C58A1A /* Inter-Regular.ttf */; };
+		37B34F9F28D4BF40009BC89D /* UIButton.Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B34F9E28D4BF40009BC89D /* UIButton.Configuration.swift */; };
 		37B7C71328BE7D98009C45D4 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B7C70F28BE7D98009C45D4 /* LoginCoordinator.swift */; };
 		37B7C71428BE7D98009C45D4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B7C71028BE7D98009C45D4 /* LoginViewController.swift */; };
 		37B7C71528BE7D98009C45D4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B7C71128BE7D98009C45D4 /* LoginView.swift */; };
 		37B7C71628BE7D98009C45D4 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B7C71228BE7D98009C45D4 /* LoginViewModel.swift */; };
 		37B7C71828BE7DE0009C45D4 /* ViewCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B7C71728BE7DE0009C45D4 /* ViewCodable.swift */; };
+		37C82A5F28D20FBC0029E23A /* WIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C82A5E28D20FBC0029E23A /* WIAlertController.swift */; };
 		37CA1BE128CA2BFE00DA1BAF /* PaymentDataCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CA1BDD28CA2BFE00DA1BAF /* PaymentDataCoordinator.swift */; };
 		37CA1BE228CA2BFE00DA1BAF /* PaymentDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CA1BDE28CA2BFE00DA1BAF /* PaymentDataViewController.swift */; };
 		37CA1BE328CA2BFE00DA1BAF /* PaymentDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CA1BDF28CA2BFE00DA1BAF /* PaymentDataView.swift */; };
@@ -69,6 +74,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3732793C28D21A720016996C /* WIAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WIAlertView.swift; sourceTree = "<group>"; };
 		3787667B28BFF21A00D31982 /* UIPlansView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPlansView.swift; sourceTree = "<group>"; };
 		378897C528BFFE310042F455 /* UIInfoPlansView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIInfoPlansView.swift; sourceTree = "<group>"; };
 		378897C728C02F160042F455 /* UILabelMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelMovie.swift; sourceTree = "<group>"; };
@@ -89,11 +95,15 @@
 		37A228DC28BFE36E00721E92 /* PlansViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansViewModel.swift; sourceTree = "<group>"; };
 		37A228E128BFEA8500721E92 /* UICheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICheckView.swift; sourceTree = "<group>"; };
 		37A2D59628BE99AC000C7220 /* UIString+Extensios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIString+Extensios.swift"; sourceTree = "<group>"; };
+		37AFF91428D5081A00C58A1A /* Futura-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Futura-Medium.ttf"; sourceTree = "<group>"; };
+		37AFF91628D509B400C58A1A /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		37B34F9E28D4BF40009BC89D /* UIButton.Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.Configuration.swift; sourceTree = "<group>"; };
 		37B7C70F28BE7D98009C45D4 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		37B7C71028BE7D98009C45D4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		37B7C71128BE7D98009C45D4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		37B7C71228BE7D98009C45D4 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		37B7C71728BE7DE0009C45D4 /* ViewCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodable.swift; sourceTree = "<group>"; };
+		37C82A5E28D20FBC0029E23A /* WIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WIAlertController.swift; sourceTree = "<group>"; };
 		37CA1BDD28CA2BFE00DA1BAF /* PaymentDataCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentDataCoordinator.swift; sourceTree = "<group>"; };
 		37CA1BDE28CA2BFE00DA1BAF /* PaymentDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentDataViewController.swift; sourceTree = "<group>"; };
 		37CA1BDF28CA2BFE00DA1BAF /* PaymentDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentDataView.swift; sourceTree = "<group>"; };
@@ -162,6 +172,7 @@
 				37A2D59628BE99AC000C7220 /* UIString+Extensios.swift */,
 				37D1E98528C0E54500DBBBFA /* UIView+Extensions.swift */,
 				3798FC2828C6B8ED009AB44F /* UIStackView+Extensions.swift */,
+				37B34F9E28D4BF40009BC89D /* UIButton.Configuration.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -173,6 +184,8 @@
 				378F3D1128BBB7360057ECFA /* Ubuntu-Light.ttf */,
 				378F3D1428BBB7360057ECFA /* Ubuntu-Medium.ttf */,
 				378F3D1228BBB7360057ECFA /* Ubuntu-Regular.ttf */,
+				37AFF91428D5081A00C58A1A /* Futura-Medium.ttf */,
+				37AFF91628D509B400C58A1A /* Inter-Regular.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -203,6 +216,7 @@
 		37B7C70C28BE7D1F009C45D4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				37C82A5D28D20F870029E23A /*  RegistrationConfirmation */,
 				37CA1BDC28CA2BE700DA1BAF /* PaymentData */,
 				37A228D728BFE35500721E92 /* Plans */,
 				37B7C70E28BE7D82009C45D4 /* Login */,
@@ -229,6 +243,15 @@
 				37B7C71228BE7D98009C45D4 /* LoginViewModel.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		37C82A5D28D20F870029E23A /*  RegistrationConfirmation */ = {
+			isa = PBXGroup;
+			children = (
+				37C82A5E28D20FBC0029E23A /* WIAlertController.swift */,
+				3732793C28D21A720016996C /* WIAlertView.swift */,
+			);
+			path = " RegistrationConfirmation";
 			sourceTree = "<group>";
 		};
 		37CA1BDC28CA2BE700DA1BAF /* PaymentData */ = {
@@ -414,7 +437,9 @@
 				378F3D1628BBB7360057ECFA /* Ubuntu-Regular.ttf in Resources */,
 				378F3D1828BBB7360057ECFA /* Ubuntu-Medium.ttf in Resources */,
 				37F738E128BB1529006ABE8F /* LaunchScreen.storyboard in Resources */,
+				37AFF91528D5081A00C58A1A /* Futura-Medium.ttf in Resources */,
 				378F3D1528BBB7360057ECFA /* Ubuntu-Light.ttf in Resources */,
+				37AFF91728D509B400C58A1A /* Inter-Regular.ttf in Resources */,
 				37F738DE28BB1529006ABE8F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -451,12 +476,14 @@
 				379FC75828BD09D70020C9F8 /* UIPageControlMovie.swift in Sources */,
 				37F7390928BB156C006ABE8F /* OnboardingViewController.swift in Sources */,
 				37A228DD28BFE36E00721E92 /* PlansCoordinator.swift in Sources */,
+				37B34F9F28D4BF40009BC89D /* UIButton.Configuration.swift in Sources */,
 				378897C628BFFE310042F455 /* UIInfoPlansView.swift in Sources */,
 				37A228E228BFEA8500721E92 /* UICheckView.swift in Sources */,
 				378897C828C02F160042F455 /* UILabelMovie.swift in Sources */,
 				37F7390A28BB156C006ABE8F /* OnboardingView.swift in Sources */,
 				37A2D59728BE99AC000C7220 /* UIString+Extensios.swift in Sources */,
 				37D1E98628C0E54500DBBBFA /* UIView+Extensions.swift in Sources */,
+				3732793D28D21A720016996C /* WIAlertView.swift in Sources */,
 				3787667C28BFF21A00D31982 /* UIPlansView.swift in Sources */,
 				37F738DC28BB1526006ABE8F /* Movie.xcdatamodeld in Sources */,
 				378F3D0D28BBB42F0057ECFA /* UIColor.swift in Sources */,
@@ -468,6 +495,7 @@
 				37A228DE28BFE36E00721E92 /* PlansViewController.swift in Sources */,
 				37B7C71528BE7D98009C45D4 /* LoginView.swift in Sources */,
 				37A228DF28BFE36E00721E92 /* PlansView.swift in Sources */,
+				37C82A5F28D20FBC0029E23A /* WIAlertController.swift in Sources */,
 				37CA1BE228CA2BFE00DA1BAF /* PaymentDataViewController.swift in Sources */,
 				37F738D428BB1526006ABE8F /* SceneDelegate.swift in Sources */,
 				37B7C71828BE7DE0009C45D4 /* ViewCodable.swift in Sources */,

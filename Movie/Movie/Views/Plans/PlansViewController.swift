@@ -34,6 +34,8 @@ class PlansViewController: UIViewController {
 extension PlansViewController: PlansViewDelegate {
     
     func onTapButton() {
-        viewModel.navigateToPaymentData()
+//        viewModel.navigateToPaymentData()
+        let controller = WIAlertController.initialize(title: "Parabéns pela assinatura!", message: "Seja bem vindo (a), temos certeza que você irá adorar todo o conteúdo disponível.")
+        present(controller, animated: true)
     }
 }
